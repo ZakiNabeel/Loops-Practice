@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float art_sweet, Weightd1, Weightd2, Weightm, percentage, WeightS = 350,
+    diet_soda_sweet= 350*0.0001, Weightd3;
+
+    cout<<"Enter the amount of Sweetners required to kill a mouse =";
+    cin>>art_sweet;
+    cout<<endl<<"What will be the weight of the mouse? ";
+    cin>>Weightm;
+
+    percentage = (art_sweet/Weightm);
+    cout<<"Rate for mice and humans is same."<<endl<<"The amount of soda drank by the mouse should be "
+    <<percentage*100<<" percent, the weight of the mouse."<<endl;
+
+    cout<<"Enter the weight of the dieter = ";
+    cin>>Weightd1;
+    cout<<endl<<"Enter the ideal weight of the dieter = ";
+    cin>>Weightd2;
+    Weightd3= Weightd1-Weightd2;
+
+    cout<<endl<<"Weight loss required = "<<Weightd3<<endl<<"Perecentage of sweetners in diet soda pop = "
+    <<diet_soda_sweet<<endl;
+
+
+
+
+
+return 0;
+}
