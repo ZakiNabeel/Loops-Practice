@@ -1,0 +1,25 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    int num1, num2, num3, rem1, rem2, gcd, cd;
+    cout<<"number 1=";
+    cin>>num1;
+    cout<<"number 2=";
+    cin>>num2;
+    if(num1>num2)
+        num3=num2;
+    else
+        num3=num1;
+    for(int i = 2; i <=num3; i++)
+    {
+        rem1 = num1%i;
+        rem2 = num2%i;
+        if (rem1==rem2)
+            cd = num1 - i;
+    }
+    gcd = num1-cd;
+    cout<<"Greatest Common Devisor = "<<gcd;
+
+return 0;
+}
