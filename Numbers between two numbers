@@ -1,0 +1,24 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    int number1, number2, c=0, d=0, e=1;
+    cout<<"Number1 =";
+    cin>>number1;
+    cout<<"Number2 ="<<endl;
+    cin>>number2;
+
+    c = abs(number1-number2);
+    if(number1>number2)
+        d = number1;
+    else
+        d = number2;
+
+    int f = c-1;
+    for(; f!= 0;f--)
+    {
+        e = d - f;
+        cout<<e<<", ";
+    }
+    return 0;
+}
