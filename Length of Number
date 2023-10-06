@@ -1,0 +1,18 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main() {
+    int number, rem, n=0;
+    cout<<"Number =";
+    cin>>number;
+    number = abs(number);
+    for (;number != 0;n++)
+    {
+        rem = number % 10;
+        number = number - rem;
+        number = number / 10;
+    }
+    cout<<n;
+
+return 0;
+}
